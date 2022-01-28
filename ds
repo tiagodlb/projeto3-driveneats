@@ -1,0 +1,23 @@
+[33mcommit ccb6c5a64dc023f68a1d12cb1e9ae3e9f6a612c9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Tiago de Lima Batista <tigolimab223@gmail.com>
+Date:   Fri Jan 28 01:21:17 2022 -0300
+
+    Estrutura do main completo, finalização do footer e remoção da scrollbar horizontal quando rolar a lista de alimentos
+
+[33mcommit e89d8d8d4a52ef0603de74403dfa27fb8aa3e3e2[m
+Author: Tiago de Lima Batista <tigolimab223@gmail.com>
+Date:   Thu Jan 27 23:07:16 2022 -0300
+
+    Adicionando header e mudança nas tags semânticas
+
+[33mcommit bde1d16b4eeedba14e49e9a5994f41e9afa47c0e[m
+Author: Tiago de Lima Batista <tigolimab223@gmail.com>
+Date:   Thu Jan 27 22:25:00 2022 -0300
+
+    reset.css adicionado
+
+[33mcommit b121726a205a66f836eac56f04aebf7af4a7e550[m
+Author: Tiago de Lima Batista <tigolimab223@gmail.com>
+Date:   Thu Jan 27 22:18:23 2022 -0300
+
+    Primeira versão com o esqueleto base
