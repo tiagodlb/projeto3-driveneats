@@ -2,6 +2,7 @@
 body {
     font-family: 'Righteous', cursive;
     width: 100vw;
+    background-color: #CBCBCB;
 }
 
 * {
@@ -12,13 +13,14 @@ body {
 
 @media (max-width : 414px) {
     header {
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         height: 92px;
         background-color: #CF2B2B;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 2;
     }
 
     header h1 {
@@ -32,5 +34,112 @@ body {
         margin-left: 21px;
         font-family: 'Roboto', sans-serif;
         color: #ffffff;
+    }
+
+    /* ---- Conteudo ---- */
+
+    main {
+        width: 414px;
+        height: 100%;
+        margin-top: 123px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        margin-top: 31px;
+        width: 414px;
+        height: 100%;
+        overflow: scroll;
+
+    }
+
+    main h2, h3, h4 {
+        margin-top: 27px;
+        margin-left: 16px;
+        font-family: 'Righteous', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.018em;
+        color: #333333;
+
+    }
+
+    .cardapio {
+        width: 564px;
+        height: 216px;
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .caixa-prato {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        width: 172px;
+        height: 216px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+    }
+
+    .prato {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66px;
+        padding: top 0px;
+
+    }
+
+    /* ---- Footer ---- */
+
+    footer {
+        width: 414px;
+        height: 92px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        margin-top: 31px;
+        bottom: end;
+        left: end;
+
+        background: #FFFFFF;
+    }
+
+    button {
+        width: 364px;
+        height: 61px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #CBCBCB;
+        border: 1px solid #CBCBCB;
+        border-radius: 50px;
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.018em;
+
+        color: #FFFFFF;
+    }
+
+    /* ---- ScrollBar ---- */
+    /* Chrome, Edge , Safari e amigos */
+    ::-webkit-scrollbar {
+        width: 0;
     }
 }
