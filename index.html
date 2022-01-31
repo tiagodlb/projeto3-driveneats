@@ -22,72 +22,90 @@
     </header>
     <main>
         <h2>Primeiro, seu prato</h2>
-        <section>
+        <section class="prato-principal">
             <div class="cardapio">
                 <div class="caixa-prato">
-                    <button class="prato" onclick="Selecionar()">
-                        <figure></figure>
-                        <p>ad</p>
-                    </button>
-                </div>
-                <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="prato prato1" onclick="selecionarPrato('prato1')">
+                        <figure><img src = "imagens/banana.jpg"/></figure>
+                        <div class="Titulo-prato">Banana</div>
+                        <p>Banana cortadinha!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="prato prato2" onclick="selecionarPrato('prato2')">
+                        <figure><img src = "imagens/banana.jpg"/></figure>
+                        <div class="Titulo-prato">Banana</div>
+                        <p>Banana cortadinha!</p>
+                        <div class="preco"> R$ 99,99</div>
+                    </div>
+                </div>
+                <div class="caixa-prato">
+                    <div class="prato prato3" onclick ="selecionarPrato('prato3')">
+                        <figure><img src = "imagens/banana.jpg"/></figure>
+                        <div class="Titulo-prato">Banana</div>
+                        <p>Banana cortadinha!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
 
             </div>
-        </section>
+        </section class="bebida">
         <h3>Agora, sua bebida</h3>
         <section>
             <div class="cardapio">
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="bebida bebida1" onclick="selecionarBebida('bebida1')">
+                        <figure><img src = "imagens/vitamina-de-banana.jpg"/></figure>
+                        <div class="Titulo-prato">Suco de banana</div>
+                        <p>Suquinho de banana!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="bebida bebida2" onclick="selecionarBebida('bebida2')">
+                        <figure><img src = "imagens/vitamina-de-banana.jpg"/></figure>
+                        <div class="Titulo-prato">Suco de banana</div>
+                        <p>Suquinho de banana!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="bebida bebida3" onclick="selecionarBebida('bebida3')">
+                        <figure><img src = "imagens/vitamina-de-banana.jpg"/></figure>
+                        <div class="Titulo-prato">Suco de banana</div>
+                        <p>Suquinho de banana!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
 
             </div>
-        </section>
+        </section class="sobremesa">
         <h4>Por fim, sua sobremesa</h4>
         <section>
             <div class="cardapio">
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class=" sobremesa sobremesa1" onclick="selecionarSobremesa('sobremesa1')">
+                        <figure><img src = "imagens/doce-de-banana.jpg"/></figure>
+                        <div class="Titulo-prato">Doce de banana</div>
+                        <p>Docinho de banana!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="sobremesa sobremesa2" onclick="selecionarSobremesa('sobremesa2')">
+                        <figure><img src = "imagens/doce-de-banana.jpg"/></figure>
+                        <div class="Titulo-prato">Doce de banana</div>
+                        <p>Docinho de banana!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
                 <div class="caixa-prato">
-                    <div class="prato">
-                        <figure></figure>
-                        <p>ad</p>
+                    <div class="sobremesa sobremesa3" onclick="selecionarSobremesa('sobremesa3')">
+                        <figure><img src = "imagens/doce-de-banana.jpg"/></figure>
+                        <div class="Titulo-prato">Doce de banana</div>
+                        <p>Docinho de banana!</p>
+                        <div class="preco"> R$ 99,99</div>
                     </div>
                 </div>
 
@@ -96,7 +114,7 @@
         </div>
     </main>
     <footer>    
-        <button>Selecione os 3 itens
+        <button class="finalizar" disabled onclick="botao();numeroCliente()">Selecione os 3 itens
             para fechar o pedido</button>
     </footer>
     <script src="scripts.js"></script>

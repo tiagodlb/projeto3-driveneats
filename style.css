@@ -50,7 +50,7 @@ body {
         margin-top: 31px;
         width: 414px;
         height: 100%;
-        overflow: scroll;
+        overflow-x: scroll;
 
     }
 
@@ -91,11 +91,123 @@ body {
     .prato {
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 66px;
+        width: 172px;
+        height: 216px;
         padding: top 0px;
 
+    }
+
+    .bebida {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 172px;
+        height: 216px;
+        padding: top 0px;
+
+    }
+
+    .sobremesa {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 172px;
+        height: 216px;
+        padding: top 0px;
+
+    }
+
+
+    section button {
+        width: 172px;
+        height: 216px;
+        background-color: #ffffff;
+        border: none;
+    }
+
+    .prato p {
+        width: 139px;
+        height: 23px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #A6A6A6;
+
+    }
+
+    .bebida p {
+        width: 139px;
+        height: 23px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #A6A6A6;
+
+    }
+
+    .sobremesa p {
+        width: 139px;
+        height: 23px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #A6A6A6;
+
+    }
+
+    .prato img {
+        width: 144px;
+        height: 87px;
+        border-radius: 4px;
+    }
+
+    .bebida img {
+        width: 144px;
+        height: 87px;
+        border-radius: 4px;
+    }
+
+    .sobremesa img {
+        width: 144px;
+        height: 87px;
+        border-radius: 4px;
+    }
+
+    .Titulo-prato {
+        width: 139px;
+        height: 23px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+
+    .preco{
+        width: 139px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
     }
 
     /* ---- Footer ---- */
@@ -103,14 +215,13 @@ body {
     footer {
         width: 414px;
         height: 92px;
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 2;
-        margin-top: 31px;
-        bottom: end;
-        left: end;
+        bottom: 0;
+        left: 0;
 
         background: #FFFFFF;
     }
@@ -118,13 +229,6 @@ body {
     footer button {
         width: 364px;
         height: 61px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #CBCBCB;
-        border: 1px solid #CBCBCB;
-        border-radius: 50px;
 
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -137,6 +241,15 @@ body {
         color: #FFFFFF;
     }
 
+    .finalizar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #CBCBCB;
+        border: 1px solid #CBCBCB;
+        border-radius: 50px;
+    }
+
     /* ---- ScrollBar ---- */
     /* Chrome, Edge , Safari e amigos */
     ::-webkit-scrollbar {
@@ -145,7 +258,7 @@ body {
 
     /* Selecionar */
 
-    .selecionado {
+    .selecionadoPrato {
         background: #FFFFFF;
         width: 172px;
         height: 216px;
@@ -154,4 +267,26 @@ body {
         border-radius: 9px;
     }
 
+    .selecionadoBebida {
+        background: #FFFFFF;
+        width: 172px;
+        height: 216px;
+        border: 0px;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+        border-radius: 9px;
+    }
+
+    .selecionadoSobremesa {
+        background: #FFFFFF;
+        width: 172px;
+        height: 216px;
+        border: 0px;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+        border-radius: 9px;
+    }
+
+    .selecionadoBotao {
+        background-color: #32B72F;
+        font-weight: 700;
+    }
 }
